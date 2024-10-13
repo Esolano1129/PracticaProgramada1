@@ -1,8 +1,8 @@
 public class Pelicula {
-    private String nombre;
-    private int año;
-    private int duracion;
-    private String tipo;
+    protected String nombre;
+    protected int año;
+    protected int duracion;
+    protected String tipo;
 
     public Pelicula(String nombre, int año, int duracion, String tipo){
         this.nombre = nombre;
