@@ -45,6 +45,7 @@ public class netflix{
                             boolean salir2 = false;
                             if (o instanceof Anime) {
                                 while (!salir2){
+
                                     try {
                                         Anime anime1 = (Anime) o;
                                         System.out.println("\n"+anime1.Name);
@@ -61,11 +62,15 @@ public class netflix{
                                             salir2= true;
                                             salir3 = true;
                                             System.out.println("Saliendo al menu principal.");
+                                            break;
+
                                         }
                                     }catch (InputMismatchException e) {
                                         System.out.println("Error: debe ingresar un numero.");
                                     }
                                 }
+                            } if (salir3) {
+                                break;
                             }
                         }
                         }
