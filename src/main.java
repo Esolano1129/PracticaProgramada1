@@ -21,8 +21,9 @@ public class main{
 
 
         Scanner scanner = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
         boolean salir = false;
-        boolean salir2 = false;
+
         while (!salir) {
             try {
                 scanner.nextLine();
@@ -34,40 +35,40 @@ public class main{
                 System.out.println("4. Todas las peliculas");
                 System.out.println("5. Salir");
 
-                int opcion = scanner.nextInt();
-                int opcion2 = scanner.nextInt();
+                int opc = scanner.nextInt();
 
-                switch (opcion) {
+                switch (opc) {
                     case 1:
+                        boolean salir3 = false;
+                        while(!salir3){
                         for (Object o : movielist){
+                            boolean salir2 = false;
                             if (o instanceof Anime) {
-                                Anime anime1 = (Anime) o;
-                                System.out.println(anime1.Name);
                                 while (!salir2){
-                                    try{
+                                    try {
+                                        Anime anime1 = (Anime) o;
+                                        System.out.println("\n"+anime1.Name);
                                         System.out.println("\nEliga una opcion: ");
                                         System.out.println("1. Ver informacion completa");
                                         System.out.println("2. Siguiente pelicula");
                                         System.out.println("3. Salir");
-                                        switch (opcion2){
-                                            case 1:
-                                                System.out.println(anime1.toString());
-                                                break;
-                                            case 2:
-                                                break;
-                                            case 3:
-                                                salir = true;
-                                                System.out.println("Saliendo al menu principal.");
-                                                break;
-                                            default:
-                                                System.out.println("Opcion no válida.");
+                                        int opc2 = scanner2.nextInt();
+                                        if (opc2 == 1){
+                                            System.out.println(anime1.toString());
+                                        } else if (opc2 == 2) {
+                                            salir2 = true;
+                                        } else if (opc2 ==3 ) {
+                                            salir2= true;
+                                            salir3 = true;
+                                            System.out.println("Saliendo al menu principal.");
                                         }
-                                } catch (Exception e) {
+                                    }catch (InputMismatchException e) {
                                         System.out.println("Error: debe ingresar un numero.");
-                                    throw new RuntimeException(e);
+                                    }
                                 }
-                                }
-                            }}
+                            }
+                        }
+                        }
                         break;
                     case 2:
 
