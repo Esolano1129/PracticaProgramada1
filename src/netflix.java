@@ -6,7 +6,7 @@ import java.util.List;
 import javax.imageio.plugins.tiff.TIFFImageReadParam;
 import java.util.*;
 
-public class main{
+public class netflix{
 
     public static void main(String[] args) {
 
