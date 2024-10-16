@@ -14,6 +14,24 @@ public class Movie {
        this.Type = Type;
     }
 
+    public Movie() {
+    }
 
+    public Movie(Integer year, String name, Double time, String type) {
+        Year = year;
+        Name = name;
+        Time = time;
+        Type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "Name='" + Name + '\'' +
+                ", Year=" + Year +
+                ", Time=" + Time +
+                ", Type='" + Type + '\'' +
+                '}';
+    }
 }
 
