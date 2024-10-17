@@ -26,12 +26,11 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movie{" +
-                "Name='" + Name + '\'' +
-                ", Year=" + Year +
-                ", Time=" + Time +
-                ", Type='" + Type + '\'' +
-                '}';
+        return "****Movie****" +
+                "\n~Name: '" + Name + '\'' +
+                "\n~Year: " + Year +
+                "\n~Time: " + Time +
+                "\n~Type: '" + Type + '\'' ;
     }
 }
 
