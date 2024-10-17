@@ -67,6 +67,8 @@ public class netflix {
                                             }
                                         } catch (InputMismatchException e) {
                                             System.out.println("Error: debe ingresar un numero.");
+                                        }catch(Exception e){
+                                            System.out.println(e.getMessage());
                                         }
                                     }
                                 }
@@ -104,6 +106,8 @@ public class netflix {
                                             }
                                         } catch (InputMismatchException e) {
                                             System.out.println("Error: debe ingresar un numero.");
+                                        }catch (Exception e){
+                                            System.out.println(e.getMessage());
                                         }
                                     }
                                 }
@@ -142,6 +146,8 @@ public class netflix {
                                             }
                                         } catch (InputMismatchException e) {
                                             System.out.println("Error: debe ingresar un numero.");
+                                        }catch(Exception e){
+                                            System.out.println(e.getMessage());
                                         }
                                     }
                                 }
@@ -179,6 +185,8 @@ public class netflix {
                                             }
                                         } catch (InputMismatchException e) {
                                             System.out.println("Error: debe ingresar un numero.");
+                                        }catch(Exception e){
+                                            System.out.println(e.getMessage());
                                         }
                                     }
                                 }
@@ -197,10 +205,11 @@ public class netflix {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Error: debe ingresar un numero.");
+            }catch(Exception e) {
+                System.out.println(e.getMessage());
             }
         }
     }
-
 
 }
 
