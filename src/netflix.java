@@ -40,7 +40,6 @@ public class netflix {
                 switch (opc) {
 
                     case 1:
-
                         while (!salir3) {
                             for (Object o : movielist) {
                                 boolean salir2 = false;
@@ -152,11 +151,7 @@ public class netflix {
                             }
                         }
                         break;
-
-
                     case 4:
-
-
                         while (!salir3) {
                             for (Object o : movielist) {
                                 boolean salir2 = false;
@@ -192,8 +187,6 @@ public class netflix {
                                 }
                             }
                         }
-
-
                         break;
                     case 5:
                         salir = true;
